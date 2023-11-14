@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,500&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  font-family: 'Albert Sans', sans-serif;
+  font-family: 'Mulish', sans-serif;
+
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.login-btn {
+  border-radius: 0.25rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.57);
+  background: linear-gradient(180deg, #0EBE5F 0%, #099620 100%);
+  box-shadow: 0px -0.5px 1px 0.2px rgba(220, 255, 219, 0.37) inset;
+}
+
+.home-btn {
+  background: linear-gradient(180deg, #1B201E 0%, #05240A 100%);
+
+  box-shadow: 0px 0px 0px 1px #FFF inset, 0px 2px 12px 0px rgba(68, 66, 66, 0.25)
+}
