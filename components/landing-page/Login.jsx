@@ -32,7 +32,7 @@ const LoginForm = () => {
        
 
         <button className='login-btn w-full text-white px-3 py-4 font-semibold'>
-        <Link href="/dashboard">
+        <Link href="/home">
             Login
         </Link>
         </button>
