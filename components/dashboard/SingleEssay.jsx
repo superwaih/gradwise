@@ -2,18 +2,26 @@ import React from "react";
 import { IoIosSearch } from "react-icons/io";
 import DownloadIcon from "../../assets/icons/DownloadIcon"
 import Link from "next/link"
+import { RxCaretLeft } from "react-icons/rx";
+import { useRouter } from "next/router";
 const SingleEssay = () => {
+    const router = useRouter()
   return (
     <div className="px-8 w-full flex-col flex space-y-5 py-8">
       <div className="flex justify-between w-full">
       <div className="">
-      <h3 className="text-2xl  font-bold">All Essay</h3>
-      <p className="text-[#7E8696]">View all your questions and add new question</p>
+
+        <button onClick={()=> router.push("/essay")} className="flex items-center gap-2 ">
+            <RxCaretLeft className="text-[#7A8699] text-xl" />
+
+      <h3 className=" text-[#7A8699]  font-bold">All Essay</h3>
+        </button>
+      <p className="text-[#7E8696]">What is impact of climate change on biodiversity and propose measures to mitigate its effects </p>
       </div>
 
       <div>
-       <Link href={"/add"}>
-       <button className="login-btn px-3 py-3 text-white">Add new Questions</button></Link>
+    
+       <button className="login-btn px-3 py-3 text-white">Download All Responses</button>
 
       </div>
       </div>
