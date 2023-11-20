@@ -3,8 +3,10 @@ import BigEssayIcon from "../../assets/icons/BigEssayIcon";
 import { HiArrowDownLeft, HiArrowLeft } from "react-icons/hi2";
 import WritingIcon from "../../assets/icons/WritingIcon";
 import AdmissionIcon from "../../assets/icons/AdmissionIcon";
+import { useRouter } from "next/router";
 
 const MainDashboard = () => {
+  const router = useRouter()
   return (
     <div className="px-8  flex-col flex space-y-5 py-8">
       <h3 className="text-2xl font-bold">Welcome Eniola,</h3>
@@ -18,10 +20,13 @@ const MainDashboard = () => {
               Grade essay or long assignments for different courses.
             </p>
           </div>
-          <button className="text-primary/green flex items-center gap-3 font-bold ">
-            <p>Start new grading</p>
-            <HiArrowLeft className="rotate-180" />
-          </button>
+
+          <a href="https://1fa2-105-112-103-114.ngrok-free.app/">
+            <button className="text-primary/green flex items-center gap-3 font-bold ">
+              <span>Start new grading</span>
+              <HiArrowLeft className="rotate-180" />
+            </button>
+          </a>
         </div>
 
         <div className="  rounded-md flex bg-white p-3 flex-col space-y-4">
@@ -32,7 +37,8 @@ const MainDashboard = () => {
               Grade essay or long assignments for different courses.
             </p>
           </div>
-          <button className="text-primary/green flex items-center gap-3 font-bold ">
+          
+          <button onClick={() =>router.push("essay")} className="text-primary/green flex items-center gap-3 font-bold ">
             <p>Go to essay</p>
             <HiArrowLeft className="rotate-180" />
           </button>
@@ -46,10 +52,12 @@ const MainDashboard = () => {
               Grade essay or long assignments for different courses.
             </p>
           </div>
-          <button className="text-primary/green flex items-center gap-3 font-bold ">
-            <p>Start new grading</p>
-            <HiArrowLeft className="rotate-180" />
-          </button>
+          <a href="https://1fa2-105-112-103-114.ngrok-free.app/">
+            <button className="text-primary/green flex items-center gap-3 font-bold ">
+              <span>Start new grading</span>
+              <HiArrowLeft className="rotate-180" />
+            </button>
+          </a>
         </div>
       </section>
 
@@ -60,34 +68,32 @@ const MainDashboard = () => {
         <div className="flex w-4/5 py-12  x bg-white justify-between mx-auto items-center">
           <div className="flex flex-col space-y-3 items-center justify-center text-center">
             <p className="rounded-[100%] z-50  w-fit bg-black px-8 py-7">
-                <span className="text-white font-semibold">1</span>
+              <span className="text-white font-semibold">1</span>
             </p>
             <p className="font-semibold">Enter Essay information</p>
           </div>
 
           <div className="flex flex-col space-y-3 items-center justify-center text-center">
             <p className="rounded-[100%] z-50  w-fit bg-black px-8 py-7">
-                <span className="text-white font-semibold">2</span>
+              <span className="text-white font-semibold">2</span>
             </p>
             <p className="font-semibold text-black">Select grading criteria</p>
           </div>
 
           <div className="flex flex-col space-y-3 items-center justify-center text-center">
             <p className="rounded-[100%] z-50  w-fit bg-black px-8 py-7">
-                <span className="text-white font-semibold">3</span>
+              <span className="text-white font-semibold">3</span>
             </p>
             <p className="font-semibold text-black">Enter Submission details</p>
           </div>
         </div>
 
-        <div className="border-b-[1px] w-[70%]  absolute top-[40%] left-[15%] right-[10%] border-[#E1E4E1">
-        
-          
+        <div className="border-b-[1px] w-[70%]  absolute top-[40%] left-[15%] right-[10%] border-[#E1E4E1"></div>
+        <div className="flex items-center justify-center">
+          <button className="login-btn text-white px-5 py-3">
+            Start New grading
+          </button>
         </div>
-    <div className="flex items-center justify-center">
-    <button className="login-btn text-white px-5 py-3">Start New grading</button>
-
-    </div>
       </section>
     </div>
   );

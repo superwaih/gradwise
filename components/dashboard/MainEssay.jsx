@@ -3,6 +3,7 @@ import { HiArrowDownLeft, HiArrowLeft } from "react-icons/hi2";
 import { IoIosSearch } from "react-icons/io";
 import Link from "next/link"
 const MainEssay = () => {
+  const arr = [1,2,3,4,5,6,7, 8, 9,10]
   return (
     <div className="px-8 w-full flex-col flex space-y-5 py-8">
       <div className="flex justify-between w-full">
@@ -31,111 +32,36 @@ const MainEssay = () => {
       <td className="py-3 px-2">Date Created</td>
       <td className="py-3 px-2">Action</td>
     </tr>
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
+   
 
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
+    {
+      arr.map((ar) => (
+        
 
+        <tr key={ar} className="text-[#101828] border w-full">
+       <Link key={ar} href={"/singleessay"}>
 
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
+        <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate...</td>
+       </Link>
+        <td className="px-3">60</td>
+        <td>2</td>
+        <td>Long Essay</td>
+        <td>
+          24-07-2024
+        </td>
+        <td className="rotate-180 px-2">
+        <Link key={ar} href={"/singleessay"}>
 
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
+          <HiArrowLeft />
+        </Link>
+        </td>
+      </tr>
+       
+      ))
+    }
 
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
+   
 
-
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
-
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
-
-    <tr className="text-[#101828] border">
-      <td className="px-2 py-3">What is the impact of climate change on biodiversity and propose measures to mitigate its effects</td>
-      <td className="px-3">60</td>
-      <td>2</td>
-      <td>Long Essay</td>
-      <td>
-        24-07-2024
-      </td>
-      <td className="rotate-180 px-2">
-        <HiArrowLeft />
-      </td>
-    </tr>
 
     
 

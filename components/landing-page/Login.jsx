@@ -2,6 +2,8 @@ import React from 'react'
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { FaEye } from "react-icons/fa";
 import Link from 'next/link';
+import Head from 'next/head'
+
 const LoginForm = () => {
   return (
     <div className='flex flex-col mx-auto w-[500px] space-y-4 justify-center items-center py-8'>
@@ -31,11 +33,11 @@ const LoginForm = () => {
 
        
 
+        <Link href="/home" className='w-full'>
         <button className='login-btn w-full text-white px-3 py-4 font-semibold'>
-        <Link href="/home">
             Login
-        </Link>
         </button>
+        </Link>
 
 
     </div>

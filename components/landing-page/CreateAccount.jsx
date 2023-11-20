@@ -40,11 +40,11 @@ const CreateAccount = () => {
             </div>
         </div>
 
+        <Link href="/home" className='w-full'>
         <button className='login-btn w-full text-white px-3 py-4 font-semibold'>
-        <Link href="/home">
             Sign up
-        </Link>
         </button>
+        </Link>
 
 
     </div>

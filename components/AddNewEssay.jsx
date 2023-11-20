@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 const AddNewEssay = () => {
+
   return (
     <div className="px-8 w-full flex-col flex space-y-5 py-8">
     <div className="flex flex-col items-center justify-center">
