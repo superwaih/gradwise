@@ -34,7 +34,13 @@ const CreateAccount = () => {
                 Select Profession
             </label>
             <div className='flex relative border px-3 w-full py-3 rounded-md border-grey/200'>
-                <input type="text" className='outline-none w-full' placeholder='someone@gmail.com' />
+               
+               <select className='outline-none text-[#656C7A] w-full bg-inherit' name="" id="">
+                <option value="">Student</option>
+                <option value="">Teacher</option>
+
+               </select>
+                {/* <input type="text" className='outline-none w-full' placeholder='someone@gmail.com' /> */}
                 <HiOutlineEnvelope />
 
             </div>

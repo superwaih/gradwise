@@ -47,17 +47,17 @@ const MainDashboard = () => {
         <div className="  rounded-md flex bg-white p-3 flex-col space-y-4">
           <AdmissionIcon />
           <div>
-            <h3 className="font-bold text-xl">Grade a new submission</h3>
+            <h3 className="font-bold text-xl">Grade Responses</h3>
             <p className="text-[#6B7B85]">
               Grade essay or long assignments for different courses.
             </p>
           </div>
-          <a href="  https://60ef-105-112-222-70.ngrok-free.app">
-            <button className="text-primary/green flex items-center gap-3 font-bold ">
-              <span>Start new grading</span>
+          {/* <a href="  https://60ef-105-112-222-70.ngrok-free.app"> */}
+            <button onClick={() =>router.push("essay")} className="text-primary/green flex items-center gap-3 font-bold ">
+              <span>Go to submission</span>
               <HiArrowLeft className="rotate-180" />
             </button>
-          </a>
+          {/* </a> */}
         </div>
       </section>
 
