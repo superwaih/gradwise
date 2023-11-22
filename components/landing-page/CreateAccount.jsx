@@ -41,7 +41,7 @@ const CreateAccount = () => {
 
                </select>
                 {/* <input type="text" className='outline-none w-full' placeholder='someone@gmail.com' /> */}
-                <HiOutlineEnvelope />
+                {/* <HiOutlineEnvelope /> */}
 
             </div>
         </div>
