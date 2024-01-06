@@ -1,8 +1,9 @@
 import React from 'react'
+
+import Head from "next/head"
 import DashboardHeading from '../components/DashboardHeading'
 import Sidebar from '../components/dashboard/Sidebar'
 import MainDashboard from '../components/dashboard/MainDashboard'
-import Head from "next/head"
 const DashboardPage = () => {
   return (
     <>

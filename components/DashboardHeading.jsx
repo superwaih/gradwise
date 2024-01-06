@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from "../assets/icons/Logo.svg"
+import Logo from "../assets/icons/GIcon.svg"
 import Link from 'next/link'
 import { IoIosSearch } from "react-icons/io";
 import { HiOutlineEnvelope } from 'react-icons/hi2'
@@ -15,7 +15,7 @@ const DashboardHeading = () => {
             width={0}
             height={0}
             objectFit="cover"
-            src={GIcon}
+            src={Logo}
             alt=""
         />
         <GradewiseIcon />
