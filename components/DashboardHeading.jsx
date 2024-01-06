@@ -2,12 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from "../assets/icons/Logo.svg"
 import Link from 'next/link'
-import GIcon from "../assets/icons/GIcon.svg"
-
 import { IoIosSearch } from "react-icons/io";
 import { HiOutlineEnvelope } from 'react-icons/hi2'
-import GradewiseIcon from '../assets/icons/GradewiseIcon'
-
+import LecturerIcon from '../assets/icons/LecturerIcon';
+import GradewiseIcon from '../assets/icons/GradewiseIcon';
 const DashboardHeading = () => {
   return (
     <div>
