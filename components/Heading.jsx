@@ -21,7 +21,7 @@ const Heading = () => {
        </div>
 
         <div className='font-semibold flex gap-3'>
-            <p>Don&apos;t an account?</p>
+            <p>Don&apos;t have an account?</p>
             {/* <Link href={"/login"}> */}
             <span className='text-primary/green'>signup</span>
 
