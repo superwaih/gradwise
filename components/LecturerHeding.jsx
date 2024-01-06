@@ -4,7 +4,8 @@ import GIcon from "../assets/icons/GIcon.svg"
 import Link from 'next/link'
 import GradewiseIcon from '../assets/icons/GradewiseIcon'
 import StudentIcon from '../assets/icons/StudentIcon'
-const Heading = () => {
+import LecturerIcon from '../assets/icons/LecturerIcon'
+const LecturerHeading = () => {
   return (
     <div>
        <div className='flex justify-between px-8 py-5 items-center'>
@@ -17,11 +18,11 @@ const Heading = () => {
             alt=""
         />
         <GradewiseIcon />
-        <StudentIcon />
+        <LecturerIcon />
        </div>
 
         <div className='font-semibold flex gap-3'>
-            <p>Don&apos;t an account?</p>
+            <p>Don&apos;t have an account?</p>
             {/* <Link href={"/login"}> */}
             <span className='text-primary/green'>signup</span>
 
@@ -34,4 +35,4 @@ const Heading = () => {
   )
 }
 
-export default Heading
+export default LecturerHeading
