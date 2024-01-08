@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Heading from '../components/Heading'
 import CreateAccount from '../components/landing-page/CreateAccount'
+import LoginForm from '../components/landing-page/Login'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
       <main className=''>
         <Heading />
-        <CreateAccount />
+        <LoginForm />
 
       </main>
 

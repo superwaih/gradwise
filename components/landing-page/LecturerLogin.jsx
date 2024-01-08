@@ -4,10 +4,10 @@ import { FaEye } from "react-icons/fa";
 import Link from 'next/link';
 import Head from 'next/head'
 
-const LoginForm = () => {
+const LecturerLoginForm = () => {
   return (
     <div className='flex flex-col mx-auto w-[500px] space-y-4 justify-center items-center py-8'>
-        <h3 className='font-bold text-2xl text-black'>Student Sign in</h3>
+        <h3 className='font-bold text-2xl text-black'>Lecturer Sign in</h3>
 
         <div className='w-full flex flex-col gap-3'>
             <label className='text-[#656C7A]' htmlFor="">
@@ -30,15 +30,15 @@ const LoginForm = () => {
 
             </div>
             <div className='flex gap-1'>
-                <span>Not a student?</span>
-                <Link href={"/lecturer-signin"}>
-                <span className='text-blue-500 hover:underline active:underline'>Sign in as a lecturer</span></Link>
+                <span>Not a lecturer?</span>
+                <Link href={"/"}>
+                <span className='text-blue-500 hover:underline active:underline'>Sign in as a Student</span></Link>
             </div>
         </div>
 
        
 
-        <Link href="https://de19-102-89-23-193.ngrok-free.app/" className='w-full'>
+        <Link href="/home" className='w-full'>
         <button className='login-btn w-full text-white px-3 py-4 font-semibold'>
             Login
         </button>
@@ -49,4 +49,4 @@ const LoginForm = () => {
   )
 }
 
-export default LoginForm
+export default LecturerLoginForm

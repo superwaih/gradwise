@@ -8,11 +8,11 @@ import { useRouter } from "next/router";
 const MainDashboard = () => {
   const router = useRouter()
   return (
-    <div className="px-8  flex-col flex space-y-5 py-8">
-      <h3 className="text-2xl font-bold">Welcome Eniola,</h3>
+    <div className="px-8  flex-col w-full flex space-y-5 py-8">
+      <h3 className="text-2xl font-bold">Welcome,</h3>
       <p className="text-[#7E8696]">What do you want to do today?</p>
-      <section className="bg-[#F8F9FB] flex gap-4 w-full rounded-md border-[#E4E7EC] border px-4 py-3 ">
-        <div className="  rounded-md bg-white p-3 flex flex-col space-y-4">
+      <section className="bg-[#F8F9FB] justify-between  flex gap-4 w-full rounded-md border-[#E4E7EC] border px-4 py-3 ">
+        {/* <div className="  rounded-md bg-white p-3 flex flex-col space-y-4">
           <BigEssayIcon />
           <div>
             <h3 className="font-bold text-xl">Grade a new submission</h3>
@@ -27,9 +27,9 @@ const MainDashboard = () => {
               <HiArrowLeft className="rotate-180" />
             </button>
           </a>
-        </div>
+        </div> */}
 
-        <div className="  rounded-md flex bg-white p-3 flex-col space-y-4">
+        <div className="w-1/2  rounded-md flex bg-white p-3  flex-col space-y-4">
           <WritingIcon />
           <div>
             <h3 className="font-bold text-xl">Add a new question</h3>
@@ -38,13 +38,16 @@ const MainDashboard = () => {
             </p>
           </div>
           
-          <button onClick={() =>router.push("essay")} className="text-primary/green flex items-center gap-3 font-bold ">
+          <button 
+          // onClick={() =>router.push("essay")} 
+          
+          className="text-primary/green flex items-center gap-3 font-bold ">
             <p>Go to essay</p>
             <HiArrowLeft className="rotate-180" />
           </button>
         </div>
 
-        <div className="  rounded-md flex bg-white p-3 flex-col space-y-4">
+        <div className=" w-1/2  rounded-md flex bg-white p-3 flex-col space-y-4">
           <AdmissionIcon />
           <div>
             <h3 className="font-bold text-xl">Grade Responses</h3>
@@ -89,11 +92,11 @@ const MainDashboard = () => {
         </div>
 
         <div className="border-b-[1px] w-[70%]  absolute top-[40%] left-[15%] right-[10%] border-[#E1E4E1"></div>
-        <div className="flex items-center justify-center">
+        {/* <div className="flex items-center justify-center">
           <button className="login-btn text-white px-5 py-3">
             Start New grading
           </button>
-        </div>
+        </div> */}
       </section>
     </div>
   );
