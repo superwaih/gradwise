@@ -56,7 +56,7 @@ const MainDashboard = () => {
             </p>
           </div>
           <a href="https://1a91-102-89-33-75.ngrok-free.app/responses">
-            <button onClick={() =>router.push("essay")} className="text-primary/green flex items-center gap-3 font-bold ">
+            <button className="text-primary/green flex items-center gap-3 font-bold ">
               <span>Go to submission</span>
               <HiArrowLeft className="rotate-180" />
             </button>
