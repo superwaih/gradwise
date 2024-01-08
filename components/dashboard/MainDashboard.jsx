@@ -21,7 +21,7 @@ const MainDashboard = () => {
             </p>
           </div>
 
-          <a href="https://de19-102-89-23-193.ngrok-free.app">
+          <a href="https://1a91-102-89-33-75.ngrok-free.app">
             <button className="text-primary/green flex items-center gap-3 font-bold ">
               <span>Start new grading</span>
               <HiArrowLeft className="rotate-180" />
@@ -52,7 +52,7 @@ const MainDashboard = () => {
               Grade essay or long assignments for different courses.
             </p>
           </div>
-          {/* <a href="  https://de19-102-89-23-193.ngrok-free.app"> */}
+          {/* <a href="  https://1a91-102-89-33-75.ngrok-free.app"> */}
             <button onClick={() =>router.push("essay")} className="text-primary/green flex items-center gap-3 font-bold ">
               <span>Go to submission</span>
               <HiArrowLeft className="rotate-180" />
