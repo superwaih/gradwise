@@ -54,7 +54,7 @@ const ProfileHeading = () => {
             <h3>MA</h3>
           </div>
           <p className="font-bold flex items-center gap-2">
-            <h3>adegbuyi@gmail.com </h3>
+            <h3>madegbuyi@gmail.com </h3>
             <span>
               <PiCaretDown />
             </span>
