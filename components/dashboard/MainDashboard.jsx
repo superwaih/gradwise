@@ -50,7 +50,7 @@ const MainDashboard = () => {
         <div className=" w-1/2  rounded-md flex bg-white p-3 flex-col space-y-4">
           <AdmissionIcon />
           <div>
-            <h3 className="font-bold text-xl">Grade Responses</h3>
+            <h3 className="font-bold text-xl">View Submission</h3>
             <p className="text-[#6B7B85]">
               Grade essay or long assignments for different courses.
             </p>
